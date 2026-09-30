@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Tokens do design aprovado (documento de requisitos, seção "Direção de design"). */
+@theme {
+  --color-bg: #f5f5f3;
+  --color-surface: #ebebe8;
+  --color-media: #dadad5;
+  --color-line: #d6d6d2;
+  --color-muted: #6b6b68;
+  --color-body: #4a4a48;
+  --color-ink: #141414;
+
+  --color-night: #0f0f10;
+  --color-night-surface: #1c1c1e;
+  --color-night-line: #2c2c2f;
+  --color-night-chip: #3a3a3e;
+  --color-night-body: #c9c9cc;
+  --color-night-muted: #a1a1a6;
+  --color-night-label: #8a8a8f;
+
+  --color-accent: #3a5a78;
+  --color-live: #2f7d4f;
+
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg font-sans text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-ink text-bg;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
