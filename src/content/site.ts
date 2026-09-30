@@ -174,7 +174,7 @@ export const otherProjects: Project[] = [
 ];
 
 export const contact = {
-  intro: "Aberto a oportunidades como Desenvolvedor Full Stack ou Engenheiro de Software Júnior. Se o meu perfil faz sentido para o seu time, me chama.",
+  intro: "Buscando desafios como Desenvolvedor Full Stack ou Engenheiro de Software Júnior. Se você procura alguém para somar ao seu time, entre em contato.",
   links: [
     { label: "E-mail", href: `mailto:${profile.email}`, icon: "arrow" },
     { label: "WhatsApp", href: profile.whatsapp, icon: "external" },
