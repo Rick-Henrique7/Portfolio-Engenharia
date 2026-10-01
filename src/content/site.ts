@@ -47,7 +47,7 @@ export const profile = {
   headline: {
     before: "Engenheiro de software que conecta ",
     highlight: "IA, automação",
-    after: " e sistemas industriais.",
+    after: " e sistemas web corporativos",
   },
   intro:
     "Construo agentes de IA, automações e sistemas web que resolvem problemas reais de negócio. Na Brasa Tecnologia, desenvolvo fluxos multiagente em N8N integrados a WhatsApp, APIs e ERPs, e aplicações em Laravel, React e TypeScript.",
