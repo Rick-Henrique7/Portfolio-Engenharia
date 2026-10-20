@@ -50,7 +50,7 @@ export const profile = {
   headline: {
     before: "Engenheiro de software que conecta ",
     highlight: "IA, automação",
-    after: " e sistemas industriais.",
+    after: " e sistemas web corporativos",
   },
   intro:
     "Construo agentes de IA, automações e sistemas web que resolvem problemas reais de negócio. Na Brasa Tecnologia, desenvolvo fluxos multiagente em N8N integrados a WhatsApp, APIs e ERPs, e aplicações em Laravel, React e TypeScript.",
@@ -191,7 +191,7 @@ export const otherProjects: Project[] = [
 ];
 
 export const contact = {
-  intro: "Aberto a oportunidades como Desenvolvedor Full Stack ou Engenheiro de Software Júnior. Se o meu perfil faz sentido para o seu time, me chama.",
+  intro: "Buscando desafios como Desenvolvedor Full Stack ou Engenheiro de Software Júnior. Se você procura alguém para somar ao seu time, entre em contato.",
   links: [
     { label: "E-mail", href: `mailto:${profile.email}`, icon: "arrow" },
     { label: "WhatsApp", href: profile.whatsapp, icon: "external" },

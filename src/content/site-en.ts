@@ -7,7 +7,7 @@ export const profile = {
   headline: {
     before: "Software engineer bridging ",
     highlight: "AI, automation",
-    after: " and industrial systems.",
+    after: "corporate web systems.",
   },
   intro:
     "I build AI agents, automations and web systems that solve real business problems. At Brasa Tecnologia, I develop multi-agent workflows in N8N integrated with WhatsApp, APIs and ERPs, and applications in Laravel, React and TypeScript.",
