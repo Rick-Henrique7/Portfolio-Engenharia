@@ -85,6 +85,20 @@ export const stack: StackGroup[] = [
 
 export const featuredProjects: FeaturedProject[] = [
   {
+    slug: "deep-thinker",
+    eyebrow: "Featured · AI second brain",
+    title: "Deep thinker",
+    description:
+      "A graph-based second brain: notes link through [[brackets]] and turn into a graph, a Kanban board, an infinite canvas and a PDF reader where every highlight becomes a note. At its core is the Devil's Advocate, an AI that uses your own notes as memory (RAG), disagrees with you in three modes and creates notes on its own through tool calling.",
+    highlights: ["Java 21 · Spring Boot 4", "React · TypeScript · Tauri 2", "RAG · MCP with 16 tools"],
+    media: "Video · from the note graph to the Devil's Advocate",
+    video: "/projetos/deepthinker.mp4",
+    poster: "/projetos/deepthinker-poster.jpg",
+    caseStudyHref: "#deep-thinker",
+    liveHref: "https://deepthinker-app.vercel.app",
+    codeHref: "https://github.com/Rick-Henrique7/DeepThinker",
+  },
+  {
     slug: "agro-iot",
     eyebrow: "Featured · Agro / IoT",
     title: "Agro-IoT Integrated Platform",

@@ -40,7 +40,20 @@ export function Projects() {
                     mediaFirst ? "" : "lg:order-2"
                   }`}
                 >
-                  {project.image ? (
+                  {project.video ? (
+                    <video
+                      src={project.video}
+                      poster={project.poster}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                      preload="metadata"
+                      aria-label={`${lang === "pt" ? "Vídeo de apresentação do" : "Demo video of"} ${project.title}`}
+                      className="absolute inset-0 h-full w-full object-contain"
+                    />
+                  ) : project.image ? (
                     <>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -68,9 +81,19 @@ export function Projects() {
                       ))}
                     </ul>
                     <div className="flex gap-5 text-[15px] font-medium lg:text-lg">
+                      {/* Estudo de caso — desativado por enquanto: caseStudyHref aponta para o
+                          próprio card (#slug), então o link não leva a lugar nenhum. Reativar quando
+                          existirem as páginas de estudo de caso (ex.: /projetos/[slug]) e trocar o
+                          caseStudyHref em site.ts / site-en.ts pelo caminho real.
                       <a href={project.caseStudyHref} className="hover:text-accent">
                         {lang === "pt" ? "Estudo de caso" : "Case study"} <Glyph kind="arrow" />
                       </a>
+                      */}
+                      {project.liveHref && (
+                        <a href={project.liveHref} {...linkProps(project.liveHref)} className="hover:text-accent">
+                          {lang === "pt" ? "Ver o app" : "Live app"} <Glyph kind="external" />
+                        </a>
+                      )}
                       <a href={project.codeHref} {...linkProps(project.codeHref)} className="text-muted hover:text-ink">
                         {lang === "pt" ? "Código" : "Code"} <Glyph kind="external" />
                       </a>

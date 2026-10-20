@@ -28,8 +28,11 @@ export type FeaturedProject = {
   highlights: string[];
   next?: string; // o que ainda está em desenvolvimento
   image?: string; // print/GIF do projeto em /public
+  video?: string; // vídeo de apresentação em /public (tem prioridade sobre image)
+  poster?: string; // primeiro quadro do vídeo, mostrado antes de carregar
   media: string; // legenda do GIF provisório
-  caseStudyHref: string;
+  caseStudyHref: string; // não está em uso: o botão está comentado no Projects.tsx (ver nota lá)
+  liveHref?: string; // app publicado, quando existe
   codeHref: string;
 };
 
@@ -124,6 +127,20 @@ export const stack: StackGroup[] = [
 ];
 
 export const featuredProjects: FeaturedProject[] = [
+  {
+    slug: "deep-thinker",
+    eyebrow: "Destaque · Segundo cérebro com IA",
+    title: "Deep thinker",
+    description:
+      "Um segundo cérebro em grafo: as notas se ligam por [[colchetes]] e viram grafo, quadro Kanban, canvas infinito e leitor de PDF em que cada grifo vira nota. No centro está o Advogado do Diabo, uma IA que usa as suas próprias notas como memória (RAG), discorda de você em três modos e cria notas sozinha por tool calling.",
+    highlights: ["Java 21 · Spring Boot 4", "React · TypeScript · Tauri 2", "RAG · MCP com 16 ferramentas"],
+    media: "Vídeo · do grafo de notas ao Advogado do Diabo",
+    video: "/projetos/deepthinker.mp4",
+    poster: "/projetos/deepthinker-poster.jpg",
+    caseStudyHref: "#deep-thinker",
+    liveHref: "https://deepthinker-app.vercel.app",
+    codeHref: "https://github.com/Rick-Henrique7/DeepThinker",
+  },
   {
     slug: "agro-iot",
     eyebrow: "Destaque · Agro / IoT",
